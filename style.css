@@ -173,3 +173,33 @@ input{
 .info p{
     margin-left: 12px;
 }
+
+/* FOOTER */
+#plan{
+    display: flex;
+    background-color: #f2f2f2;
+}
+.large{
+    display: flex;
+    width: 93%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.about, .our_acco, .assistance{
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+}
+.about a{
+    padding-bottom: 10px;
+    width: 100%;
+}
+.our_acco a{
+    padding-bottom: 10px;
+    width: 100%;
+}
+.assistance a{
+    padding-bottom: 10px;
+    width: 100%;
+}
