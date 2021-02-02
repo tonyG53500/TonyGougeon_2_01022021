@@ -66,18 +66,20 @@ a{
 }
 .direction{
     display: flex;
+    justify-content: flex-end;
     height: 100px;
+    width: 100%;
     align-items: center;
 }
 #btn-direction{
-    border-top: #0065FC 2px;
+    border-top: #0065FC 3px;
     padding-left: 33px;
     padding-right: 33px;
     padding-top: 41px;
     padding-bottom: 41px;
 }
 #btn-direction:hover{
-    border-top: #0065FC 2px solid;
+    border-top: #0065FC 3px solid;
     color: #0065FC;
     padding-left: 33px;
     padding-right: 33px;
@@ -135,14 +137,37 @@ input{
     padding-right: 28px;
     border-radius: 0px 15px 15px 0px;
 }
+.icon1{
+    display: none;
+    border: 0;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #0065FC;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px 15px 15px 15px;
+}
+.icon1:hover{
+    border: 0;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #0065fcd0;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px 15px 15px 15px;
+}
 .filters{
     display: flex;
     align-items: center;
     margin-top: 30px;
 }
-.button2{
-    margin-left: 25px;
-    padding: 0px 24px 0px 0px;
+.button2, .button3, .button4, .button5{
+    margin-left: 20px;
+    padding: 0px 20px 0px 0px;
     border: 0;
     border: 2px solid #f2f2f2;
     border-radius: 25px;
@@ -151,8 +176,38 @@ input{
     transition: 0.3s;
 }
 .button2:hover{
-    margin-left: 25px;
-    padding: 0px 24px 0px 0px;
+    margin-left: 20px;
+    padding: 0px 20px 0px 0px;
+    border: 0;
+    border: 2px solid #f2f2f2;
+    border-radius: 25px;
+    background-color: #0065FC;
+    height: 50px;
+    color: white;
+}
+.button3:hover{
+    margin-left: 20px;
+    padding: 0px 20px 0px 0px;
+    border: 0;
+    border: 2px solid #f2f2f2;
+    border-radius: 25px;
+    background-color: #0065FC;
+    height: 50px;
+    color: white;
+}
+.button4:hover{
+    margin-left: 20px;
+    padding: 0px 20px 0px 0px;
+    border: 0;
+    border: 2px solid #f2f2f2;
+    border-radius: 25px;
+    background-color: #0065FC;
+    height: 50px;
+    color: white;
+}
+.button5:hover{
+    margin-left: 20px;
+    padding: 0px 20px 0px 0px;
     border: 0;
     border: 2px solid #f2f2f2;
     border-radius: 25px;
@@ -415,12 +470,22 @@ input{
     .filters{
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
+        justify-content: flex-start;
         margin-top: 30px;
     }
-    .filters button:last-child{
+    .button5{
         margin-top: 20px;
         margin-left: 65px;
+    }
+    .button5:hover{
+        margin-left: 65px;
+        padding: 0px 20px 0px 0px;
+        border: 0;
+        border: 2px solid #f2f2f2;
+        border-radius: 25px;
+        background-color: #0065FC;
+        height: 50px;
+        color: white;
     }
     #accommodation{
         display: flex;
@@ -452,5 +517,240 @@ input{
     }
     .pop .title2{
         margin-bottom: 30px;
+    }
+}
+
+/* SMALL SCREEN */
+@media screen and (max-width: 767px){
+    #nav{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .logo{
+        padding: 30px 0px 0px 30px;
+    }
+    .registration{
+        padding-top: 30px;
+    }
+    .button_reg #btn-direction:hover{
+        border: none;
+    }
+    .direction{
+        order: 1;
+        height: auto;
+        margin-top: 10px;
+    }
+    .nav_bar{
+        display: flex;
+        width: 107%;
+        justify-content: space-between;
+    }
+    .nav_bar a{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .nav_bar #btn-direction{
+        border-bottom: #f2f2f2 solid 3px;
+        border-top: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .nav_bar #btn-direction:hover{
+        border-bottom: #0065FC 3px solid;
+        color: #0065FC;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #search{
+        margin-top: 35px;
+    }
+    .research{
+        justify-content: center;
+    }
+    .button1{
+        display: none;
+        border: 0;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: #0065FC;
+        height: 50px;
+        padding-left: 28px;
+        padding-right: 28px;
+        border-radius: 0px 15px 15px 0px;
+    }
+    .icon1{
+        display: block;
+        border: 0;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: #0065FC;
+        height: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 15px 15px 15px 15px;
+        margin-left: -15px;
+    }
+    .icon1:hover{
+        border: 0;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: #0065fcd0;
+        height: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 15px 15px 15px 15px;
+    }
+    .filters{
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+    .button2, .button4, .button5{
+        margin-left: 0px;
+    }
+    .button3{
+        margin-left: 8px;
+    }
+    .button4{
+        margin-top: 20px;
+    }
+    .button2:hover{
+        margin-left: 0px;
+        padding: 0px 20px 0px 0px;
+        border: 0;
+        border: 2px solid #f2f2f2;
+        border-radius: 25px;
+        background-color: #0065FC;
+        height: 50px;
+        color: white;
+    }
+    .button3:hover{
+        margin-left: 8px;
+        padding: 0px 20px 0px 0px;
+        border: 0;
+        border: 2px solid #f2f2f2;
+        border-radius: 25px;
+        background-color: #0065FC;
+        height: 50px;
+        color: white;
+    }
+    .button4:hover{
+        margin-left: 0px;
+        padding: 0px 20px 0px 0px;
+        border: 0;
+        border: 2px solid #f2f2f2;
+        border-radius: 25px;
+        background-color: #0065FC;
+        height: 50px;
+        color: white;
+    }
+    .button5:hover{
+        margin-left: 0px;
+        padding: 0px 20px 0px 0px;
+        border: 0;
+        border: 2px solid #f2f2f2;
+        border-radius: 25px;
+        background-color: #0065FC;
+        height: 50px;
+        color: white;
+    }
+    #accommodation{
+        width: auto;
+    }
+    .acco{
+        display: none;
+        order: 1;
+        width: 100%;
+        padding: 30px 0px 30px 0px;
+        background-color: white;
+    }
+    .pop{
+        border-radius: 0px;
+        width: 100%;
+        padding: 30px 0px 30px 0px;
+    }
+    .title2{
+        width: 90%;
+        margin: auto;
+    }
+    .figure2{
+        width: 93%;
+        margin: auto;
+    }
+    .figure1{
+        flex-direction: column;
+        width: 93%;
+        margin: auto;
+    }
+    .figure1 a{
+        width: 100%;
+        margin: auto;
+    }
+    .large{
+        flex-direction: column;
+    }
+    .about, .our_acco, .assistance{
+        width: 100%;
+    }
+    .cards_activities{
+        flex-direction: column;
+    }
+    .cards_activities a{
+        width: 100%;
+    }
+    .column{
+        width: 100%;
+    }
+    .card1 img{
+        height: 134px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .card2 img{
+        height: 134px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .card3 img{
+        height: 134px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .card4 img{
+        height: 134px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .card5 img{
+        height: 134px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .card6 img{
+        height: 134px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .card1, .card2, .card3, .card4, .card5, .card6{
+        height: 190px;
+    }
+    .link1{
+        margin-bottom: 25px;
+    }
+    .link3{
+        margin-top: 25px;
+    }
+    .link4{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .link6{
+        margin-top: 25px;
+        margin-bottom: 50px;
     }
 }
