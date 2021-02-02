@@ -209,8 +209,8 @@ input{
 .figure1{
     display: flex;
     justify-content: space-between;
-    height: 210px;
-    margin-bottom: 35px;
+    height: 220px;
+    margin-bottom: 30px;
 }
 .figure1 a{
     width: 31%;
@@ -232,7 +232,11 @@ input{
     object-fit: cover;
 }
 .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-left: 15px;
+    height: 92px;
 }
 .description i{
     width: 18px;
@@ -404,4 +408,49 @@ input{
 .assistance a{
     padding-bottom: 10px;
     width: 100%;
+}
+
+/* MEDIUM SCREEN */
+@media screen and (max-width: 991px){
+    .filters{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .filters button:last-child{
+        margin-top: 20px;
+        margin-left: 65px;
+    }
+    #accommodation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 93%;
+        margin: auto;
+        height: 1300px;
+    }
+    .acco{
+        display: flex;
+        flex-direction: column;
+        width: 88%;
+        background-color: #f2f2f2;
+        border-radius: 15px;
+        padding: 40px;
+        margin: 0
+        ;
+    }
+    .pop{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 88%;
+        background-color: #f2f2f2;
+        border-radius: 15px;
+        padding: 40px;
+        margin: 0;
+    }
+    .pop .title2{
+        margin-bottom: 30px;
+    }
 }
