@@ -475,7 +475,7 @@ input{
     }
     .button5{
         margin-top: 20px;
-        margin-left: 65px;
+        margin-left: 60px;
     }
     .button5:hover{
         margin-left: 65px;
@@ -610,11 +610,18 @@ input{
         align-content: flex-start;
         align-items: flex-start;
     }
-    .button2, .button4, .button5{
+    .filters p{
+        margin-bottom: 0px;
+    }
+    .button2, .button3, .button4, .button5{
         margin-left: 0px;
     }
+    .button2{
+        margin-top: 20px;
+        margin-right: 15px;
+    }
     .button3{
-        margin-left: 8px;
+        margin-top: 20px;
     }
     .button4{
         margin-top: 20px;
@@ -630,7 +637,7 @@ input{
         color: white;
     }
     .button3:hover{
-        margin-left: 8px;
+        margin-left: 0px;
         padding: 0px 20px 0px 0px;
         border: 0;
         border: 2px solid #f2f2f2;
@@ -661,12 +668,12 @@ input{
     }
     #accommodation{
         width: auto;
+        height: auto;
     }
     .acco{
-        display: none;
         order: 1;
         width: 100%;
-        padding: 30px 0px 30px 0px;
+        padding: 30px 0px 0px 0px;
         background-color: white;
     }
     .pop{
@@ -674,22 +681,42 @@ input{
         width: 100%;
         padding: 30px 0px 30px 0px;
     }
-    .title2{
-        width: 90%;
+    .title1{
+        width: 93%;
         margin: auto;
+        padding-bottom: 30px;
+    }
+    .title2{
+        width: 93%;
+        margin: auto;
+    }
+    .link_acco{
+        margin-bottom: 20px;
+    }
+    .link_pop{
+        margin-bottom: 20px;
     }
     .figure2{
         width: 93%;
         margin: auto;
+        height: auto;
+    }
+    .plus{
+        width: 93%;
+        margin: auto;
+        padding-top: 20px;
     }
     .figure1{
         flex-direction: column;
         width: 93%;
         margin: auto;
+        height: auto;
     }
     .figure1 a{
         width: 100%;
-        margin: auto;
+    }
+    .description i{
+        padding-bottom: 15px;
     }
     .large{
         flex-direction: column;
