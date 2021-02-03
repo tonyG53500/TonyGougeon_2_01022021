@@ -71,7 +71,7 @@ a{
     width: 100%;
     align-items: center;
 }
-#btn-direction{
+#btn-direction, #btn-direction1, #btn-direction2{
     border-top: #0065FC 3px;
     padding-left: 33px;
     padding-right: 33px;
@@ -79,6 +79,22 @@ a{
     padding-bottom: 41px;
 }
 #btn-direction:hover{
+    border-top: #0065FC 3px solid;
+    color: #0065FC;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 41px;
+    padding-bottom: 41px;
+}
+#btn-direction1:hover{
+    border-top: #0065FC 3px solid;
+    color: #0065FC;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 41px;
+    padding-bottom: 41px;
+}
+#btn-direction2:hover{
     border-top: #0065FC 3px solid;
     color: #0065FC;
     padding-left: 33px;
@@ -532,7 +548,7 @@ input{
     .registration{
         padding-top: 30px;
     }
-    .button_reg #btn-direction:hover{
+    .button_reg #btn-direction2:hover{
         border: none;
     }
     .direction{
@@ -556,7 +572,19 @@ input{
         padding-top: 20px;
         padding-bottom: 20px;
     }
+    .nav_bar #btn-direction1{
+        border-bottom: #f2f2f2 solid 3px;
+        border-top: none;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
     .nav_bar #btn-direction:hover{
+        border-bottom: #0065FC 3px solid;
+        color: #0065FC;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .nav_bar #btn-direction2:hover{
         border-bottom: #0065FC 3px solid;
         color: #0065FC;
         padding-top: 20px;
