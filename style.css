@@ -134,6 +134,7 @@ input{
 .button1{
     border: 0;
     color: white;
+    font-family: 'Raleway', sans-serif;
     font-size: 14px;
     font-weight: bold;
     background-color: #0065FC;
@@ -182,6 +183,7 @@ input{
     margin-top: 30px;
 }
 .button2, .button3, .button4, .button5{
+    font-family: 'Raleway', sans-serif;
     margin-left: 20px;
     padding: 0px 20px 0px 0px;
     border: 0;
